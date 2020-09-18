@@ -6,7 +6,6 @@
 
 QT       += core gui
 QT += svg
-RC_ICONS = logo.ico
 RC_LANG = 0x0004
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
