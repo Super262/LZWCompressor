@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>320</width>
+    <height>240</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Heiti SC</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>LZWCompressor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="svgs.qrc">
+    <normaloff>:/app_icon/resources/app_icon.png</normaloff>:/app_icon/resources/app_icon.png</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(56, 165, 254);</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>30</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_open">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>130</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>130</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btn_open {
+     background-color: rgb(255, 255, 255);
+     border: 0px
+}
+QPushButton#btn_open:pressed {
+     background-color: rgb(224, 0, 0);     
+}
+QPushButton#btn_open:hover {
+     background-color:rgb(207, 239, 255)
+}
+</string>
+        </property>
+        <property name="text">
+         <string>  Open ...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="svgs.qrc">
+          <normaloff>:/solid/resources/svgs/solid/file-import.svg</normaloff>:/solid/resources/svgs/solid/file-import.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_create">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>130</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>130</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#btn_create {
+     background-color: rgb(255, 255, 255);
+     border: 0px
+}
+QPushButton#btn_create:pressed {
+     background-color: rgb(224, 0, 0);     
+}
+QPushButton#btn_create:hover {
+     background-color:rgb(207, 239, 255)
+}
+</string>
+        </property>
+        <property name="text">
+         <string>  New ...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="svgs.qrc">
+          <normaloff>:/solid/resources/svgs/solid/file-medical.svg</normaloff>:/solid/resources/svgs/solid/file-medical.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="svgs.qrc"/>
+ </resources>
+ <connections/>
+</ui>
